@@ -10,7 +10,7 @@ public class UnitSelectionHandler : MonoBehaviour
     
     private Camera mainCamera;
 
-    private List<Unit> selectedUnits = new List<Unit>();
+    public List<Unit> SelectedUnits { get; } = new List<Unit>();
 
     private void Start() 
     {
@@ -19,11 +19,11 @@ public class UnitSelectionHandler : MonoBehaviour
 
     private void Update() 
     {
-        if(Mouse.current.leftButton.wasPressedThisFrame)
+        if (Mouse.current.leftButton.wasPressedThisFrame)
         {
             ClearSelectedUnits();
         }
-        else if(Mouse.current.leftButton.wasReleasedThisFrame)
+        else if (Mouse.current.leftButton.wasReleasedThisFrame)
         {
             ClearSelectionArea();
         }
@@ -32,27 +32,27 @@ public class UnitSelectionHandler : MonoBehaviour
 
     private void ClearSelectedUnits()
     {
-        foreach (Unit selectedUnit in selectedUnits)
+        foreach (Unit selectedUnit in SelectedUnits)
         {
             selectedUnit.Deselect();
         }
         
-        selectedUnits.Clear();
+        SelectedUnits.Clear();
     }
 
     private void ClearSelectionArea()
     {
         Ray ray = mainCamera.ScreenPointToRay(Mouse.current.position.ReadValue());
 
-        if(!Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, layerMask)) { return; }
+        if (!Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, layerMask)) { return; }
 
-        if(!hit.collider.TryGetComponent<Unit>(out Unit unit)) { return; }
+        if (!hit.collider.TryGetComponent<Unit>(out Unit unit)) { return; }
 
-        if(!unit.isOwned) { return; }
+        if (!unit.isOwned) { return; }
 
-        selectedUnits.Add(unit);
+        SelectedUnits.Add(unit);
 
-        foreach (Unit selectedUnit in selectedUnits)
+        foreach (Unit selectedUnit in SelectedUnits)
         {
             selectedUnit.Select();
         }
