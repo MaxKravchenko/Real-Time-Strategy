@@ -27,7 +27,7 @@ public class UnitSelectionHandler : MonoBehaviour
     {
         if (player == null)
         {
-            //player = NetworkClient.connection.identity.GetComponent<RTSPlayer>();
+//            player = NetworkClient.connection.identity.GetComponent<RTSPlayer>();
         }
         
         if (Mouse.current.leftButton.wasPressedThisFrame)
