@@ -35,6 +35,7 @@ public class UnitCommandGiver : MonoBehaviour
             TryTarget(target);
             return;
         }
+        
         TryMove(hit.point);
 
     }
