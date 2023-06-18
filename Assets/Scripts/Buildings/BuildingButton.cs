@@ -31,7 +31,7 @@ public class BuildingButton : MonoBehaviour, IPointerDownHandler, IPointerUpHand
     {
         if (player == null)
         {
-            //player = NetworkClient.connection.identity.GetComponent<RTSPlayer>();
+            player = NetworkClient.connection.identity.GetComponent<RTSPlayer>();
         }
 
         if (buildingPreviewInstance == null) { return; }
