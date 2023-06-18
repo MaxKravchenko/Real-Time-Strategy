@@ -14,7 +14,6 @@ public class BuildingButton : MonoBehaviour, IPointerDownHandler, IPointerUpHand
     [SerializeField] private TMP_Text priceText = null;
     [SerializeField] private LayerMask floorMask = new LayerMask();
 
-    //test git
     private Camera mainCamera;
     private RTSPlayer player;
     private GameObject buildingPreviewInstance;
@@ -32,7 +31,7 @@ public class BuildingButton : MonoBehaviour, IPointerDownHandler, IPointerUpHand
     {
         if (player == null)
         {
-            player = NetworkClient.connection.identity.GetComponent<RTSPlayer>();
+            //player = NetworkClient.connection.identity.GetComponent<RTSPlayer>();
         }
 
         if (buildingPreviewInstance == null) { return; }
