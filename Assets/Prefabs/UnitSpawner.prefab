@@ -79,6 +79,7 @@ GameObject:
   - component: {fileID: 4471793109999210126}
   - component: {fileID: 6245011755491699439}
   - component: {fileID: 2875445257703493082}
+  - component: {fileID: 2443206254295695659}
   m_Layer: 0
   m_Name: UnitSpawner
   m_TagString: Untagged
@@ -242,6 +243,23 @@ MonoBehaviour:
   maxUnitQueue: 5
   spawnMoveRange: 7
   unitSpawnDuration: 5
+--- !u!114 &2443206254295695659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7833941532732497243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0500e324b52278c49acc4df9124506d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
+  colorRenderers:
+  - {fileID: 8179136669961498532}
 --- !u!1001 &5994633323075378653
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -487,6 +505,12 @@ Transform:
 --- !u!4 &7987180770776588315 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4264002846289601446, guid: 1e6ca94ecd216074f88be06d048728d8,
+    type: 3}
+  m_PrefabInstance: {fileID: 6193836422376489917}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &8179136669961498532 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2627511868529159193, guid: 1e6ca94ecd216074f88be06d048728d8,
     type: 3}
   m_PrefabInstance: {fileID: 6193836422376489917}
   m_PrefabAsset: {fileID: 0}
