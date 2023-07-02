@@ -208,7 +208,7 @@ MonoBehaviour:
   - {fileID: 7381861515321220673, guid: a5ea07a80e2b8b7489bd66d11b0d211b, type: 3}
   - {fileID: 4471793109999210126, guid: 0d8df79219b320040adfb13607cc210f, type: 3}
   - {fileID: 7381861515321220673, guid: 7ed98007a065537469abeb85c691de22, type: 3}
-  buildingRangeLimit: 5
+  buildingRangeLimit: 6
 --- !u!114 &5752884876182349992
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -3026,6 +3026,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lobbyUI: {fileID: 86767107}
   startGameButton: {fileID: 618123196}
+  playerNameTexts:
+  - {fileID: 634355261}
+  - {fileID: 777809727}
+  - {fileID: 1321577751}
+  - {fileID: 1058275138}
 --- !u!1 &1557549131
 GameObject:
   m_ObjectHideFlags: 0
@@ -3110,9 +3115,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1445007238}
+      - m_Target: {fileID: 1445007240}
         m_TargetAssemblyTypeName: LobbyMenu, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: LeaveLobby
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
