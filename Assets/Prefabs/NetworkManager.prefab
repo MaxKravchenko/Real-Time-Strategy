@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 452462555725794221}
   - component: {fileID: 452462555725794210}
   - component: {fileID: 452462555725794211}
-  - component: {fileID: 452462555725794209}
   m_Layer: 0
   m_Name: NetworkManager
   m_TagString: Untagged
@@ -62,12 +61,15 @@ MonoBehaviour:
   autoCreatePlayer: 1
   playerSpawnMethod: 1
   spawnPrefabs:
-  - {fileID: 3179698505854166953, guid: 8381ee87f59e8bd49b7f5d06c6376ee6, type: 3}
   - {fileID: 7833941532732497243, guid: be1a28d54521b9340b40ed9d931888b4, type: 3}
-  - {fileID: 7669924510696489128, guid: 0bbf395c18b82d3448efe3c6f822ce56, type: 3}
   - {fileID: 3394242281686429365, guid: bca7fa52b8cfcbf47be1cc23ae5b8b7a, type: 3}
-  - {fileID: 7833941532732497243, guid: 53091059025f37c479430bdb6d007c81, type: 3}
   - {fileID: 7833941532732497243, guid: 0d8df79219b320040adfb13607cc210f, type: 3}
+  - {fileID: 3901263968803851755, guid: 866629a195437ab49bfc373cda758137, type: 3}
+  - {fileID: 5987974383748810490, guid: 534a5c483d020f54ab094949054f9696, type: 3}
+  - {fileID: 3803680875630087572, guid: a5ea07a80e2b8b7489bd66d11b0d211b, type: 3}
+  - {fileID: 6557151482793476802, guid: 529bed81bd7bc314f88f90fb0a37f480, type: 3}
+  - {fileID: 3717341576767960422, guid: 47f68bde5e03c804cafe66c34294b2fb, type: 3}
+  - {fileID: 3803680875630087572, guid: 7ed98007a065537469abeb85c691de22, type: 3}
   snapshotSettings:
     bufferTimeMultiplier: 2
     catchupNegativeThreshold: -1
@@ -107,17 +109,3 @@ MonoBehaviour:
   clientMaxReceivesPerTick: 1000
   clientSendQueueLimit: 10000
   clientReceiveQueueLimit: 10000
---- !u!114 &452462555725794209
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 452462555725794223}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6442dc8070ceb41f094e44de0bf87274, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  offsetX: 0
-  offsetY: 0
