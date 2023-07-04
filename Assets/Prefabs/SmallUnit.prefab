@@ -327,6 +327,11 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0.019090593
       objectReference: {fileID: 0}
+    - target: {fileID: 7964891050393566009, guid: 8381ee87f59e8bd49b7f5d06c6376ee6,
+        type: 3}
+      propertyPath: chaseRange
+      value: 5.8
+      objectReference: {fileID: 0}
     - target: {fileID: 8472910889181012780, guid: 8381ee87f59e8bd49b7f5d06c6376ee6,
         type: 3}
       propertyPath: fireRate
