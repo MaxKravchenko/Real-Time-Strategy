@@ -4171,6 +4171,19 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2146903772, guid: f07f0a61cc99d7441889b8d674f9a354, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2146903773, guid: f07f0a61cc99d7441889b8d674f9a354, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 452462555725794210, guid: f07f0a61cc99d7441889b8d674f9a354,
+        type: 3}
+      propertyPath: transport
+      value: 
+      objectReference: {fileID: 2146903773}
     - target: {fileID: 452462555725794210, guid: f07f0a61cc99d7441889b8d674f9a354,
         type: 3}
       propertyPath: autoConnectClientBuild
@@ -4238,3 +4251,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f07f0a61cc99d7441889b8d674f9a354, type: 3}
+--- !u!114 &2146903773 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2146903773, guid: f07f0a61cc99d7441889b8d674f9a354,
+    type: 3}
+  m_PrefabInstance: {fileID: 2146903770}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6e55fca1f4e4844593a3dd65a3ecb39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
